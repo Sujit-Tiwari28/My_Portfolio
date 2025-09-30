@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Frontend Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body class="bg-gray-900 text-gray-100">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-gray-900/90 backdrop-blur-sm z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="#home" class="text-xl font-bold text-purple-400"> Sujit's Portfolio❤️</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-purple-400 transition">Home</a>
+                    <a href="#about" class="hover:text-purple-400 transition">About</a>
+                    <a href="#skills" class="hover:text-purple-400 transition">Skills</a>
+                    <a href="#projects" class="hover:text-purple-400 transition">Projects</a>
+                    <a href="#contact" class="hover:text-purple-400 transition">Contact</a>
+                </div>
+                <button class="md:hidden" id="mobile-menu-button">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden bg-gray-800" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 hover:bg-gray-700 rounded">Home</a>
+                <a href="#about" class="block px-3 py-2 hover:bg-gray-700 rounded">About</a>
+                <a href="#skills" class="block px-3 py-2 hover:bg-gray-700 rounded">Skills</a>
+                <a href="#projects" class="block px-3 py-2 hover:bg-gray-700 rounded">Projects</a>
+                <a href="#contact" class="block px-3 py-2 hover:bg-gray-700 rounded">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex items-center pt-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm Sujit Kumar Tiwari <span
+                            class="text-purple-400"></span></h1>
+                    <h2 class="text-2xl md:text-3xl mb-6 text-blue-400">Student of Computer Science Engineering</h2>
+                    <p class="text-gray-300 mb-8 max-w-lg">B.Tech CSE student at Pandit Deendayal Energy University (Deemed to be
+                        University) </p>
+                    <div class="flex space-x-4">
+                        <a href="#projects"
+                            class="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-lg font-medium transition">View
+                            My Work</a>
+                        <a href="#contact"
+                            class="border border-purple-400 text-purple-400 hover:bg-purple-400/10 px-6 py-3 rounded-lg font-medium transition">Contact
+                            Me</a>
+                    </div>
+                </div>
+                <div data-aos="fade-left" class="flex justify-center">
+                    <div
+                        class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-purple-400/30">
+                        <img src="profile.jpg" alt="Profile" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 data-aos="fade-up" class="text-3xl font-bold text-center mb-12">About <span
+                    class="text-purple-400">Me</span></h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right" class="flex justify-center">
+                    <img src="About.jpg" alt="About" class="rounded-lg shadow-lg w-full max-w-md">
+                </div>
+                <div data-aos="fade-left">
+                    <h3 class="text-2xl font-semibold mb-4">Who am I?</h3>
+                    <p class="text-gray-300 mb-4">I'm a passionate Frontend Developer currently pursuing my B.Tech in
+                        Computer Science and Engineering. I'm consistently focusing on improving my skills to build a strong foundation for my career. Every day, I try to learn new things, practice regularly, and enhance my abilities. I believe that strong skills are the key to a successful future, which is why I invest my time and energy in continuous learning and personal growth.</p>
+                    <p class="text-gray-300 mb-6">I enjoy creating beautiful, responsive, and user-friendly websites. My
+                        goal is to build applications that are not only functional but also provide an exceptional user
+                        experience.</p>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="flex items-center">
+                            <i data-feather="user" class="mr-2 text-blue-400"></i>
+                            <span class="text-gray-300">Sujit Kumar Tiwari</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-feather="mail" class="mr-2 text-blue-400"></i>
+                            <span class="text-gray-300">sujittiwari134@gmail.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-feather="map-pin" class="mr-2 text-blue-400"></i>
+                            <span class="text-gray-300">Gandhinagar,Gujrat</span>
+                        </div>
+                    </div>
+                    <a href="#" class="inline-flex items-center text-purple-400 hover:text-purple-300">
+                        <span>Download Resume</span>
+                        <i data-feather="download" class="ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 data-aos="fade-up" class="text-3xl font-bold text-center mb-12">My <span
+                    class="text-purple-400">Skills</span></h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div data-aos="fade-up" data-aos-delay="100"
+                    class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition">
+                    <div class="text-blue-400 mb-4">
+                        <i data-feather="code" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Frontend Development</h3>
+                    <p class="text-gray-300 mb-4">Building responsive and interactive user interfaces with modern
+                        technologies.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-400/10 text-blue-400 px-3 py-1 rounded-full text-sm">HTML</span>
+                        <span class="bg-blue-400/10 text-blue-400 px-3 py-1 rounded-full text-sm">CSS</span>
+                        <span class="bg-blue-400/10 text-blue-400 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                        <span class="bg-blue-400/10 text-blue-400 px-3 py-1 rounded-full text-sm">Tailwind</span>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200"
+                    class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition">
+                    <div class="text-purple-400 mb-4">
+                        <i data-feather="smartphone" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Responsive Design</h3>
+                    <p class="text-gray-300 mb-4">Creating websites that look great on all devices from desktop to
+                        mobile.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-purple-400/10 text-purple-400 px-3 py-1 rounded-full text-sm">Mobile
+                            First</span>
+                        <span class="bg-purple-400/10 text-purple-400 px-3 py-1 rounded-full text-sm">Flexbox</span>
+                        <span class="bg-purple-400/10 text-purple-400 px-3 py-1 rounded-full text-sm">Grid</span>
+                        <span class="bg-purple-400/10 text-purple-400 px-3 py-1 rounded-full text-sm">Media
+                            Queries</span>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300"
+                    class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition">
+                    <div class="text-blue-400 mb-4">
+                        <i data-feather="tool" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Tools & Other</h3>
+                    <p class="text-gray-300 mb-4">Utilizing modern tools and technologies to streamline development.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-400/10 text-blue-400 px-3 py-1 rounded-full text-sm">Git</span>
+                        <span class="bg-blue-400/10 text-blue-400 px-3 py-1 rounded-full text-sm">VS Code</span>
+                        <span class="bg-blue-400/10 text-blue-400 px-3 py-1 rounded-full text-sm">Figma</span>
+                        <span class="bg-blue-400/10 text-blue-400 px-3 py-1 rounded-full text-sm">github</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 data-aos="fade-up" class="text-3xl font-bold text-center mb-12">My <span
+                    class="text-purple-400">Projects</span></h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div data-aos="fade-up" data-aos-delay="100"
+                    class="bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://www.servcorp.co.uk/media/34561/e-commerce-img.jpeg" alt="Ecommerce Project"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Ecommerce Website Clone</h3>
+                        <p class="text-gray-300 mb-4">A responsive ecommerce website clone built with HTML, CSS, and
+                            JavaScript.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-400/10 text-blue-400 px-2 py-1 rounded-full text-xs">HTML</span>
+                            <span class="bg-blue-400/10 text-blue-400 px-2 py-1 rounded-full text-xs">CSS</span>
+                            <span class="bg-blue-400/10 text-blue-400 px-2 py-1 rounded-full text-xs">JavaScript</span>
+                            <span class="bg-blue-400/10 text-blue-400 px-2 py-1 rounded-full text-xs">Responsive</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-purple-400 hover:text-purple-300 flex items-center">
+                                <i data-feather="github" class="w-4 h-4 mr-1"></i>
+                                <span>Code</span>
+                            </a>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
+                                <i data-feather="external-link" class="w-4 h-4 mr-1"></i>
+                                <span>Live Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div data-aos="fade-up" data-aos-delay="200"
+                    class="bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://codehalweb.com/wp-content/uploads/2023/05/thumbnail-1024x576.png" alt="Portfolio Project"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Personal Portfolio</h3>
+                        <p class="text-gray-300 mb-4">A clean and modern personal portfolio website showcasing my
+                            projects and skills.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-purple-400/10 text-purple-400 px-2 py-1 rounded-full text-xs">HTML</span>
+                            <span class="bg-purple-400/10 text-purple-400 px-2 py-1 rounded-full text-xs">CSS</span>
+                            <span
+                                class="bg-purple-400/10 text-purple-400 px-2 py-1 rounded-full text-xs">JavaScript</span>
+                            <span
+                                class="bg-purple-400/10 text-purple-400 px-2 py-1 rounded-full text-xs">Tailwind</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-purple-400 hover:text-purple-300 flex items-center">
+                                <i data-feather="github" class="w-4 h-4 mr-1"></i>
+                                <span>Code</span>
+                            </a>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
+                                <i data-feather="external-link" class="w-4 h-4 mr-1"></i>
+                                <span>Live Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#"
+                    class="inline-flex items-center px-6 py-3 border border-purple-400 text-purple-400 hover:bg-purple-400/10 rounded-lg transition">
+                    <span>View All Projects</span>
+                    <i data-feather="arrow-right" class="ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 data-aos="fade-up" class="text-3xl font-bold text-center mb-12">Get In <span
+                    class="text-purple-400">Touch</span></h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div data-aos="fade-right">
+                    <h3 class="text-2xl font-semibold mb-4">Contact Information</h3>
+                    <p class="text-gray-300 mb-6">Feel free to reach out to me for any questions or opportunities. I'll
+                        get back to you as soon as possible.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="text-purple-400 mr-4 mt-1">
+                                <i data-feather="mail"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Email</h4>
+                                <p class="text-gray-400">sujittiwari134@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-blue-400 mr-4 mt-1">
+                                <i data-feather="map-pin"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Location</h4>
+                                <p class="text-gray-400">Gandhinagar,Gujrat</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-purple-400 mr-4 mt-1">
+                                <i data-feather="phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Phone</h4>
+                                <p class="text-gray-400">+918271413421</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 flex space-x-4">
+                        <a href="https://github.com/Krishna-Sah26" target="_blank"
+                            class="bg-gray-800 hover:bg-gray-700 p-3 rounded-full transition">
+                            <i data-feather="github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/krishna-kumar-sah-13a644332?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B63ATWzocQweEY6gDhyWPNw%3D%3D" target="_blank"
+                            class="bg-gray-800 hover:bg-gray-700 p-3 rounded-full transition">
+                            <i data-feather="linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/your-twitter-handle" target="_blank"
+                            class="bg-gray-800 hover:bg-gray-700 p-3 rounded-full transition">
+                            <i data-feather="twitter"></i>
+                        </a>
+                    </div>
+
+                </div>
+                <div data-aos="fade-left">
+                    <form class="bg-gray-800 p-6 rounded-lg">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-300 mb-2">Your Name</label>
+                            <input type="text" id="name"
+                                class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-300 mb-2">Your Email</label>
+                            <input type="email" id="email"
+                                class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400">
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-300 mb-2">Your Message</label>
+                            <textarea id="message" rows="4"
+                                class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 rounded-lg font-medium transition flex items-center justify-center">
+                            <span>Send Message</span>
+                            <i data-feather="send" class="ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-400">© 2023 [sujit]. All rights reserved.</p>
+                </div>
+                <div>Made with ❤️ by Tech Sujit</div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-gray-200 transition">
+                        <i data-feather="github" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-200 transition">
+                        <i data-feather="linkedin" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-200 transition">
+                        <i data-feather="twitter" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+    </script>
+</body>
+
+</html>
